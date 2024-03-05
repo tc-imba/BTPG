@@ -2,6 +2,8 @@
 #include <boost/property_tree/ptree.hpp>
 #include "Sim.hpp"
 
+using namespace btpg;
+
 const int BTPG_n = 0;
 const int BTPG_o = 1;
 

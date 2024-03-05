@@ -1,23 +1,26 @@
 #include "util.hpp"
 
-class TPG
-{
-private:
-    int numAgents;
-    int numTypeTwoEdges;
-    std::vector<Agent *> agents;
-    std::vector<type2Edge *> type2Edges;
+namespace btpg {
 
-public:
-    TPG(std::string fileName);
-    // ~TPG();
+    class TPG {
+    private:
+        int numAgents;
+        int numTypeTwoEdges;
+        std::vector<Agent *> agents;
+        std::vector<type2Edge *> type2Edges;
 
-    int getNumAgents();
-    int getNumTypeTwoEdges();
-    void addRobot(Agent *agent);
-    void addTypeTwoEdge(type2Edge *edge);
-    void removeTypeTwoEdge(type2Edge *edge);
+    public:
+        TPG(std::string fileName);
+        // ~TPG();
 
-    Agent *getAgent(int robotId);
-    type2Edge *getTypeTwoEdge(int edgeId);
-};
+        int getNumAgents();
+        int getNumTypeTwoEdges();
+        void addRobot(Agent *agent);
+        void addTypeTwoEdge(type2Edge *edge);
+        void removeTypeTwoEdge(type2Edge *edge);
+
+        Agent *getAgent(int robotId);
+        type2Edge *getTypeTwoEdge(int edgeId);
+    };
+
+}

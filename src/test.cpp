@@ -4,6 +4,8 @@
 // #include "BTPGWithGroup.hpp"
 #include "Sim.hpp"
 
+using namespace btpg;
+
 int main(int argc, char *argv[])
 {
     // read filename from input arg

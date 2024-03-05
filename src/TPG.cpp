@@ -1,5 +1,7 @@
 #include <TPG.hpp>
 
+using namespace btpg;
+
 // constructor of TPG
 TPG::TPG(std::string fileName)
 {

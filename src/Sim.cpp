@@ -1,5 +1,8 @@
 #include "Sim.hpp"
 #include <algorithm>
+
+using namespace btpg;
+
 /**
  * @brief Constructor for Sim class
  */
